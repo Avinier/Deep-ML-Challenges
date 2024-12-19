@@ -1,0 +1,14 @@
+def matrix_dot_vector(a:list[list[int|float]],b:list[int|float])-> list[int|float]:
+    c=[]
+    #m1xn1 and m2xn2 m1=n2
+    if (len(a[0]) != len(b)):
+        return -1
+    
+    for i in a:
+        temp = 0
+        for j in range(0, len(i)):
+            temp+= b[j]* i[j]
+        c.append(temp)
+    
+    # print(c)
+    return c

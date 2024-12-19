@@ -1,0 +1,10 @@
+def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
+	row, col = len(a), len(a[0])
+	b = [[0 for x in range(row)] for y in range(col)] 
+	
+	for i in range(col):
+		for j in range(row):
+			b[i][j]=a[j][i]
+	
+	return b
+	

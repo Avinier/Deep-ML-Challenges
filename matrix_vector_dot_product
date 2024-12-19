@@ -10,5 +10,5 @@ def matrix_dot_vector(a:list[list[int|float]],b:list[int|float])-> list[int|floa
             temp+= b[j]* i[j]
         c.append(temp)
     
-    # print(c)
+    print(c)
     return c
